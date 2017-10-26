@@ -41,6 +41,7 @@ public class getConnnectUtil {
         HttpPost可通过
                 addHeader/setHeader 设置请求头信息 编码格式 等信息        httppost.addHeader("Content-type", "application/json");//请求头
            相应的有 HttpGet类
+           当需要通过代理访问时，可创建 HttpHost类
          */
         List<NameValuePair> param = new ArrayList<NameValuePair>();
         param.add(new BasicNameValuePair("参数队列头部","调用参数"));//apache自带 用于装载参数的key-value对集合 将在拼接参数时自动补充 ? = & 等符号
